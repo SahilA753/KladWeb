@@ -1,0 +1,45 @@
+[debug] [2023-10-25T17:38:59.850Z] ----------------------------------------------------------------------
+[debug] [2023-10-25T17:38:59.852Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\agraw\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-10-25T17:38:59.852Z] CLI Version:   12.7.0
+[debug] [2023-10-25T17:38:59.852Z] Platform:      win32
+[debug] [2023-10-25T17:38:59.852Z] Node Version:  v20.8.0
+[debug] [2023-10-25T17:38:59.853Z] Time:          Wed Oct 25 2023 23:08:59 GMT+0530 (India Standard Time)
+[debug] [2023-10-25T17:38:59.853Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-25T17:38:59.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-25T17:38:59.926Z] > authorizing via signed-in user (agrawalsahil753@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-10-25T17:38:59.933Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-25T17:38:59.933Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-25T17:38:59.933Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-10-25T17:38:59.940Z] [hub] writing locator at C:\Users\agraw\AppData\Local\Temp\hub-kladweb.json
+[debug] [2023-10-25T17:38:59.955Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/kladweb/sites 
+[debug] [2023-10-25T17:39:01.310Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/kladweb/sites 200
+[debug] [2023-10-25T17:39:01.310Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/kladweb/sites {"sites":[{"name":"projects/kladweb/sites/kladweb","defaultUrl":"https://kladweb.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-10-25T17:39:01.310Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kladweb/webApps/-/config [none]
+[debug] [2023-10-25T17:39:02.412Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kladweb/webApps/-/config 200
+[debug] [2023-10-25T17:39:02.412Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kladweb/webApps/-/config {"projectId":"kladweb","storageBucket":"kladweb.appspot.com","apiKey":"AIzaSyC8lT2iENtwiiYxzMQEzvCdYXgZIG3nUlw","authDomain":"kladweb.firebaseapp.com","messagingSenderId":"966203636766"}
+[debug] [2023-10-25T17:39:02.424Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kladweb [none]
+[debug] [2023-10-25T17:39:02.769Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kladweb 200
+[debug] [2023-10-25T17:39:02.769Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kladweb {"projectId":"kladweb","projectNumber":"966203636766","displayName":"KladWeb","name":"projects/kladweb","resources":{"hostingSite":"kladweb"},"state":"ACTIVE","etag":"1_8fa82c5d-937b-4b91-98b0-ad74083c764b"}
+[info] i  hosting[kladweb]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[kladweb]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [25/Oct/2023:17:39:16 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Oct/2023:17:39:16 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Oct/2023:17:39:16 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Oct/2023:17:39:16 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Oct/2023:17:39:59 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Oct/2023:17:39:59 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.61\""}}
